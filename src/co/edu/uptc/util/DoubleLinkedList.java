@@ -161,7 +161,6 @@ public class DoubleLinkedList<T> implements List<T>{
     public boolean retainAll(Collection c) {
         boolean hasChanged = false;
         Iterator<T> it = this.iterator();
-
         while (it.hasNext()) {
             T element = it.next();
             if (!c.contains(element)) {
@@ -169,7 +168,6 @@ public class DoubleLinkedList<T> implements List<T>{
                 hasChanged = true;
             }
         }
-
         return hasChanged;
     }
 }
